@@ -16,9 +16,10 @@ each of the processes are printed to the terminal. <br>
 The raw results of the memory accumulation for each of the processes are also saved to .csv files in the
 Results folder. These files can be used to plot and see how the memory increases for each of the processes. <br>
 
-From preliminary testing, the main culprit seems to be the Static Optimization which accumulates 40MB of 
-memory for every loop (the results are printed below). It should be noted that only 10 time-steps are 
-being analyzed during this SO script. <br>
+From preliminary testing, the main culprit seems to be the Static Optimization which accumulates 37MB of 
+memory for every loop (the results are printed below) - this was the average over 20 loops. It should be
+noted that the SO only has 10 time-steps SO script - longer files may (likely?) will accumulate more
+memory. <br>
 
 #### Below is the average accumulated memory over 20 loops. 
 
